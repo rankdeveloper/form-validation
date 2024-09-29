@@ -26,7 +26,7 @@ export default function Form() {
   });
 
   return (
-    <div className="bg-white text-black max-w-[400px] rounded-md font-verdana sm:w-[90%] sm-h-[90%]">
+    <div className="bg-white text-black max-w-[400px] rounded-lg font-verdana sm:w-[90%] sm-h-[90%]">
       <form onSubmit={formik.handleSubmit} className="p-5 space-y-5 ">
         <div className="d-flex flex-col ">
           <label htmlFor="name" className="w-100 text-gray-800">
@@ -36,14 +36,14 @@ export default function Form() {
             type="text"
             name="name"
             id="name"
-            className="w-full border border-solid border-gray-500 p-2 rounded-md"
+            className="w-full border border-solid border-gray-500 p-2 rounded-lg"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
           />
 
           {formik.errors.name && (
-            <p className="w-fit border border-solid font-500 border-red-500 text-red-500 text-[12px] rounded-sm px-2 py-1 mt-2 ">
+            <p className="w-fit border border-solid font-500 border-red-500 text-red-500 text-[12px] rounded-md px-2 py-1 mt-2 ">
               {formik.errors.name}
             </p>
           )}
@@ -57,14 +57,14 @@ export default function Form() {
             type="email"
             name="email"
             id="email"
-            className="w-full border border-solid border-gray-500 p-2 rounded-md"
+            className="w-full border border-solid border-gray-500 p-2 rounded-lg"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
           />
 
           {formik.errors.email && (
-            <p className="w-fit border border-solid font-500 border-red-500 text-red-500 text-[12px] rounded-sm px-2 py-1 mt-2 ">
+            <p className="w-fit border border-solid font-500 border-red-500 text-red-500 text-[12px] rounded-md px-2 py-1 mt-2 ">
               {formik.errors.email}
             </p>
           )}
@@ -78,14 +78,14 @@ export default function Form() {
             type="password"
             name="password"
             id="password"
-            className="w-full border border-solid border-gray-500 p-2 rounded-md"
+            className="w-full border border-solid border-gray-500 p-2 rounded-lg"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.password}
           />
 
           {formik.errors.password && (
-            <p className="w-fit border border-solid font-500 border-red-500 text-red-500 text-[12px] rounded-sm px-2 py-1 mt-2 ">
+            <p className="w-fit border border-solid font-500 border-red-500 text-red-500 text-[12px] rounded-md px-2 py-1 mt-2 ">
               {formik.errors.password}
             </p>
           )}
